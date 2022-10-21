@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cc-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocketpay</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img src="logo.svg" alt="ícone rocketpay" />
+      </header>
+
+      <section class="cc">
+        <div class="cc-bg">
+          <svg width="360" height="230" viewBox="0 0 360 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_3303_255" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="360"
+              height="230">
+              <rect width="360" height="230" rx="15.4011" fill="#16084C" />
+            </mask>
+            <g mask="url(#mask0_3303_255)">
+              <g filter="url(#filter0_f_3303_255)">
+                <ellipse rx="319.505" ry="300.183"
+                  transform="matrix(0.999348 -0.0361194 0.0409264 0.999162 632.202 64.5223)" fill="black" />
+                  <!-- #F16529 -->
+              </g>
+              <g filter="url(#filter1_f_3303_255)">
+                <path
+                  d="M683.974 377.522C689.11 502.91 585.064 608.468 451.58 613.292C318.096 618.117 205.723 520.381 200.587 394.993C198.246 337.844 218.053 271.829 252.944 216.445C294.606 150.311 357.775 99.334 430.42 96.7084C501.842 94.127 488.128 208.364 534.951 269.674C575.638 322.949 681.586 319.224 683.974 377.522Z"
+                  fill="white" />
+                  <!-- #FF3C21 -->
+              </g>
+              <g filter="url(#filter2_f_3303_255)">
+                <ellipse rx="127.804" ry="120.075"
+                  transform="matrix(0.770267 -0.637721 0.641419 0.76719 365.462 -0.216876)" fill="black" />
+                  <!-- #FFA724 -->
+              </g>
+              <rect x="-2" y="0.233398" width="568" height="355" fill="url(#pattern0)" fill-opacity="0.02" />
+            </g>
+            <defs>
+              <filter id="filter0_f_3303_255" x="47.0108" y="-501.288" width="1170.38" height="1131.62"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="132.826" result="effect1_foregroundBlur_3303_255" />
+              </filter>
+              <filter id="filter1_f_3303_255" x="20.4416" y="-83.293" width="843.673" height="876.715"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="89.9792" result="effect1_foregroundBlur_3303_255" />
+              </filter>
+              <filter id="filter2_f_3303_255" x="134.202" y="-229.481" width="462.52" height="458.528"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="53.1314" result="effect1_foregroundBlur_3303_255" />
+              </filter>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1.6">
+                <use xlink:href="#image0_3303_255" transform="scale(0.0005 0.0008)" />
+              </pattern>
+              <linearGradient id="paint0_linear_3303_255" x1="-3.901e-06" y1="83" x2="531" y2="355"
+                gradientUnits="userSpaceOnUse">
+                <stop />
+                <stop offset="0.706073" stop-color="#404040" stop-opacity="0.293927" />
+                <stop offset="1" stop-color="#050505" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+        </div>
+
+        <div class="cc-logo">
+          <span><img src="/cc-icon.svg" alt="ícone padrão de cartão" /></span>
+          <span
+            ><img
+              src="/cc-default.svg"
+              alt="ícone do cartão de crédito selecionado"
+          /></span>
+        </div>
+
+        <div class="cc-info">
+          <div class="cc-number">1234 5678 9012 3456</div>
+
+          <div class="cc-holder">
+            <div class="label">Nome do titular</div>
+            <div class="value">FULANO DA SILVA</div>
+          </div>
+
+          <div class="cc-extra">
+            <div class="cc-expiration">
+              <div class="label">Expiração</div>
+              <div class="value">02/32</div>
+            </div>
+            <div class="cc-security">
+              <div class="label">CVC</div>
+              <div class="value">123</div>
+            </div>
+            <img src="/cc-chip.svg" alt="ícone de chip de cartão de crédito" />
+          </div>
+        </div>
+      </section>
+
+      <form action="">
+        <div class="input-wrapper">
+          <label for="card-number">Número do cartão</label>
+          <input id="card-number" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="card-holder">Nome do titular</label>
+          <input id="card-holder" />
+        </div>
+
+        <div class="flex">
+          <div class="input-wrapper">
+            <label for="expiration-date">Expiração</label>
+            <input id="expiration-date" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="security-code">CVC</label>
+            <input id="security-code" />
+          </div>
+        </div>
+
+        <button>ADICIONAR CARTÃO</button>
+      </form>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
