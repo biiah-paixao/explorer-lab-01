@@ -21,7 +21,8 @@ form label {
 
 form input {
   background: #121214;
-  border: 1px solid #323238;
+  /* border: 1px solid #323238; */
+  border: none;
   border-radius: 6px;
   height: 41px;
   padding-inline: 1.2rem;
@@ -48,7 +49,7 @@ form button {
   align-items: center;
   padding: 1.6rem 0;
 
-  background: #42d3ff;
+  background: #3AB4E8;
   border-radius: 0.6rem;
 
   cursor: pointer;

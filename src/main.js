@@ -56,18 +56,14 @@ const cardNumberPattern = {
     },
     {
       mask: "0000 0000 0000 0000",
-      regex: /^1\d{0,12}/,
-      cardtype: "biiah",
-    },
-
-    {
-      mask: "0000 0000 0000 0000",
       cardtype: "default",
     },
   ],
   dispatch: function (appended, dynamicMasked) {
     const number = (dynamicMasked.value + appended).replace(/\D/g, "")
-    const foundMask = dynamicMasked.compiledMasks.find(({ regex }) => number.match(regex))
+    const foundMask = dynamicMasked.compiledMasks.find(({ regex }) =>
+      number.match(regex)
+    )
     return foundMask
   },
 }
@@ -77,8 +73,7 @@ function setCardType(type){
   const colors = {
     visa: ["#436D99", "#2D57F2"],
     mastercard: ["#DF6F29", "#C69347"],
-    biiah: ["#BC31ED", "#5E38F5"],
-    default: ["black","white"],
+    default: ["#BC31ED", "#5E38F5"],
   }
 
 ccBgColor01.setAttribute("fill", colors[type][0])
@@ -104,7 +99,7 @@ cardHolderMasked.on("accept", () => {
 })
 function updateCardHolder(name) {
   const ccHolder = document.querySelector(".cc-holder .value")
-  ccHolder.innerText = name.length === 0 ? "FULANO DA SILVA" : name
+  ccHolder.innerText = name.length === 0 ? "SEU NOME AQUI" : name
 }
 
 

@@ -42,7 +42,8 @@ body {
 
   padding: 2.8rem 6rem 4rem;
   background: #202024;
-  border: 0.1rem solid #323238;
+  /* border: 0.1rem solid #323238; */
+  box-shadow: 20px 25px 50px black;
   border-radius: 0.6rem;
 }
 
